@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @layer base {
+    html {
+        @apply bg-repeat w-full h-full text-primary-100 heropattern-jigsaw-red-100;
+    }
+
+} */
+
+@layer base {
+    html {
+      @apply bg-custom-black;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23927db5' fill-opacity='0.48'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-size: 30px 30px;
+    }
+
+    .navbar {
+        background-color: rgb(0, 0, 0); /* Tailwind's blue-500 with 75% opacity */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.2'%3E%3Cpath d='M0 10h10V0H0v10zm10 10h10V10H10v10zm10 10h10V20H20v10zm10 10h10V30H30v10zM0 30h10V20H0v10zm10 10h10V30H10v10zm10-30h10V0H20v10zm10 10h10V10H30v10zM20 0v10H10V0h10zm0 10h10V0H20v10zM0 20h10V10H0v10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        background-size: 20px 20px; /* Adjust the size as needed */
+    }
+
+    .scroll-offset::before {
+        content: '';
+        display: block;
+        height: 4rem; /* Adjust this to match your navbar height */
+        margin-top: -4rem; /* Negative margin to offset the height */
+        visibility: hidden;
+      }
+  }

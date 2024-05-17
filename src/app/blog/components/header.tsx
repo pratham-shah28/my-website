@@ -17,7 +17,6 @@ export default function Header() {
         top: target.offsetTop,
         behavior: 'smooth'
       });
-      console.log(target.offsetTop)
     }
   }
   return (
@@ -49,14 +48,14 @@ export default function Header() {
     // </nav>
     // </header>
     
-    <div className='absolute sticky navbar top-0 w-full flex justify-between items-center h-24 text-white mx-auto px-4 pb-4'>
-      <h1 className='w-full text-3xl font-bold '>Pratham Shah</h1>
-      <ul className='hidden md:flex '>
-      <li className='p-4'><a className="inline-block font-extrabold no-underline hover:text-purple-400 hover:text-underline py-2 px-4" onClick={() => smoothScroll('1')}>About</a>
+    <div className='absolute sticky top-0 w-full flex justify-between items-center h-24 text-black bg-red-200 mx-auto px-4'>
+      <h1 className='w-full text-3xl font-bold text-black'>Pratham Shah</h1>
+      <ul className='hidden md:flex bg-red-200'>
+      <li className='p-4'><a className="inline-block text-black font-extrabold no-underline hover:text-red-400 hover:text-underline py-2 px-4" onClick={() => smoothScroll('1')}>About</a>
         </li>
-        <li className='p-4'><a className="inline-block font-extrabold no-underline hover:text-purple-400 hover:text-underline py-2 px-4" onClick={() => smoothScroll('2')}>Link</a>
+        <li className='p-4'><a className="inline-block text-black font-extrabold no-underline hover:text-red-400 hover:text-underline py-2 px-4" onClick={() => smoothScroll('2')}>Link</a>
         </li>
-        <li className='p-4'><a className="inline-block font-extrabold no-underline hover:text-purple-400 hover:text-underline py-2 px-4" href="#">Link</a>
+        <li className='p-4'><a className="inline-block text-black font-extrabold no-underline hover:text-red-400 hover:text-underline py-2 px-4" href="#">Link</a>
         </li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
